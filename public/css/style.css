@@ -1,0 +1,35 @@
+/* Glassmorphism Effect for the Menu Cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(230, 230, 230, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Custom Scrollbar for a Modern Look */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ea580c; /* Orange-600 */
+    border-radius: 10px;
+}
+
+/* Category Pill Styling */
+.category-pill {
+    padding: 8px 20px;
+    border-radius: 9999px;
+    background: #f3f4f6;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.category-pill.active {
+    background: #ea580c;
+    color: white;
+}
